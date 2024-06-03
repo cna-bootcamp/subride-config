@@ -4,10 +4,10 @@ spring:
   application:
     name: ${SPRING_APPLICATION_NAME:member-service}
   datasource:
-    url: ${DB_URL}
+    url: jdbc:mysql://localhost:3306/member?createDatabaseIfNotExist=true&serverTimezone=Asia/Seoul
 jwt:
-  expiration-time: ${JWT_EXPIRATION_TIME}
-  refresh-token-expiration-time: ${REFRESH_TOKEN_EXPIRATION_TIME}
+  expiration-time: ${JWT_EXPIRATION_TIME:36000}
+  refresh-token-expiration-time: ${REFRESH_TOKEN_EXPIRATION_TIME:360000}
 
 # Logging
 logging:

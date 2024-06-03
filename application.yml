@@ -1,8 +1,8 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
+    username: root
+    password: P@ssw0rd$
   jpa:
     database: mysql
     database-platform: org.hibernate.dialect.MySQLDialect
@@ -16,7 +16,7 @@ springdoc:
   swagger-ui:
     path: /swagger-ui.html
 jwt:
-  secret: ${JWT_SECRET}
+  secret: 8O2HQ13etL2BWZvYOiWsJ5uWFoLi6NBUG8divYVoCgtHVvlk3dqRksMl16toztDUeBTSIuOOPvHIrYq11G2BwQ==
 
 # Logging
 logging:
