@@ -2,8 +2,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    #password: '{cipher}5ba233ed3363367b794e1f173e21dd1626d89263a8e45c153bb70dd09d411758%'
-    password: P@ssw0rd$
+    password: '{cipher}6adbb600454a984898fc2ef7448b5a1b2579c47a452199288d5dc73e4e6a9fd3'
+    #password: P@ssw0rd$
   jpa:
     database: mysql
     database-platform: org.hibernate.dialect.MySQLDialect
