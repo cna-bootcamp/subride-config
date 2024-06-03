@@ -9,6 +9,7 @@ spring:
     username: ${DB_USERNAME}
     #password: ${DB_PASSWORD:{cipher}a68de9b0597cdb81a077bc626aa714f834e6798e9c0aa53c26d5cefb2c525d06}
     #암호화한 값을 사용할 때는 위와 같은 형식은 사용 못함
+    # curl -X POST http://localhost:9001/encrypt -d "P@ssw0rd$"
     password: '{cipher}dbf7229281926da83068aee04aca0fdbc170fa0bdc476e8e9241f1f4e827ba3c'
   jpa:
     database: mysql
@@ -23,8 +24,8 @@ springdoc:
   swagger-ui:
     path: /swagger-ui.html
 jwt:
-  #secret: '{cipher}ffd7c2c647ea364fa946d211072f2f1a6ace5c3f902018422fd40bd2909752cc8d9e81c40bf9edd4bbc8b31aa6ff8fb443114d01d3eb69f6215fc37a2b101e5fbbc54dbd22f88630743244a70629bb8241dccb7182decafbe0c43185d593eb4bc607fc26352b3ba64fb351c47e4dba21'
-  secret: 8O2HQ13etL2BWZvYOiWsJ5uWFoLi6NBUG8divYVoCgtHVvlk3dqRksMl16toztDUeBTSIuOOPvHIrYq11G2BwQ==
+  secret: '{cipher}0c77292c64cf9ac384d29b89d92a69f9ca8c2ce96da81d36946515f6e85cd1dcd31b86547b56ec86cbba773af5f77da1657411cb6d7d133417228abbde727a197c14f17fda2059a9bc7c7fb671b2600614caf65b55618bb4b512854df55ca844e5f1d89dd392051e1cc0a1cd0ddf16d8'
+  #secret: 8O2HQ13etL2BWZvYOiWsJ5uWFoLi6NBUG8divYVoCgtHVvlk3dqRksMl16toztDUeBTSIuOOPvHIrYq11G2BwQ==
 
 AllowedOrigins: http://localhost:3000
 
