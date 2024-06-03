@@ -5,8 +5,6 @@ spring:
     name: ${SPRING_APPLICATION_NAME}
   datasource:
     url: ${DB_URL}
-  config:
-    import: configserver:member-service/env.yml
 jwt:
   expiration-time: ${JWT_EXPIRATION_TIME}
   refresh-token-expiration-time: ${REFRESH_TOKEN_EXPIRATION_TIME}
