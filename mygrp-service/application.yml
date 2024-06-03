@@ -1,0 +1,16 @@
+# Logging
+logging:
+    org.springframework.security: DEBUG
+    com.subride.mygrp.infra.in: DEBUG
+    com.subride.mygrp.infra.out: DEBUG
+    feign:
+      codec:
+        logger:
+          level: DEBUG
+feign:
+  member:
+    url: ${MEMBER_URI}
+  subrecommend:
+    url: ${SUBRECOMMEND_URI}
+  mysub:
+    url: ${MYSUB_URI}
