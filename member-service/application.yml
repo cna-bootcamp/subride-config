@@ -1,5 +1,5 @@
 server:
-  port: ${SERVER_PORT}
+  port: ${SERVER_PORT:18080}
 spring:
   application:
     name: ${SPRING_APPLICATION_NAME:member-service}
