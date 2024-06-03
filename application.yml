@@ -1,11 +1,15 @@
+server:
+  port: ${SERVER_PORT}
 spring:
+  application:
+    name: ${SPRING_APPLICATION_NAME}
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: ${DB_USERNAME:root}
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
     #password: ${DB_PASSWORD:{cipher}a68de9b0597cdb81a077bc626aa714f834e6798e9c0aa53c26d5cefb2c525d06}
     #암호화한 값을 사용할 때는 위와 같은 형식은 사용 못함
-    password: ${DB_PASSWORD}
-    #password: '{cipher}a68de9b0597cdb81a077bc626aa714f834e6798e9c0aa53c26d5cefb2c525d06'
+    password: '{cipher}a68de9b0597cdb81a077bc626aa714f834e6798e9c0aa53c26d5cefb2c525d06'
   jpa:
     database: mysql
     database-platform: org.hibernate.dialect.MySQLDialect
