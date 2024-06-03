@@ -24,8 +24,9 @@ springdoc:
   swagger-ui:
     path: /swagger-ui.html
 jwt:
-  secret: '{cipher}0c77292c64cf9ac384d29b89d92a69f9ca8c2ce96da81d36946515f6e85cd1dcd31b86547b56ec86cbba773af5f77da1657411cb6d7d133417228abbde727a197c14f17fda2059a9bc7c7fb671b2600614caf65b55618bb4b512854df55ca844e5f1d89dd392051e1cc0a1cd0ddf16d8'
-  #secret: 8O2HQ13etL2BWZvYOiWsJ5uWFoLi6NBUG8divYVoCgtHVvlk3dqRksMl16toztDUeBTSIuOOPvHIrYq11G2BwQ==
+  #JWT secret키는 암호화하면 동작 안함
+  #secret: '{cipher}0c77292c64cf9ac384d29b89d92a69f9ca8c2ce96da81d36946515f6e85cd1dcd31b86547b56ec86cbba773af5f77da1657411cb6d7d133417228abbde727a197c14f17fda2059a9bc7c7fb671b2600614caf65b55618bb4b512854df55ca844e5f1d89dd392051e1cc0a1cd0ddf16d8'
+  secret: 8O2HQ13etL2BWZvYOiWsJ5uWFoLi6NBUG8divYVoCgtHVvlk3dqRksMl16toztDUeBTSIuOOPvHIrYq11G2BwQ==
 
 AllowedOrigins: http://localhost:3000
 
