@@ -23,8 +23,9 @@ springdoc:
   swagger-ui:
     path: /swagger-ui.html
 jwt:
-  #secret: '{cipher}7af27e72cdacde29488747ce99e266a8b7968b0e3cc0c5bb28c2e2f7d5e67db23a4e3fa3c8e236df362ad1b6647b8349ddc6a334d449f97de8345df6aa9cde002faf2da237419a3ee937de108f5b1cb4a073205d1205dd77dd574eb2022950edb9b643f86674e81f6600e574b359a98f'
-  secret: 8O2HQ13etL2BWZvYOiWsJ5uWFoLi6NBUG8divYVoCgtHVvlk3dqRksMl16toztDUeBTSIuOOPvHIrYq11G2BwQ==
+  secret: '{cipher}ffd7c2c647ea364fa946d211072f2f1a6ace5c3f902018422fd40bd2909752cc8d9e81c40bf9edd4bbc8b31aa6ff8fb443114d01d3eb69f6215fc37a2b101e5fbbc54dbd22f88630743244a70629bb8241dccb7182decafbe0c43185d593eb4bc607fc26352b3ba64fb351c47e4dba21'
+  #secret: 8O2HQ13etL2BWZvYOiWsJ5uWFoLi6NBUG8divYVoCgtHVvlk3dqRksMl16toztDUeBTSIuOOPvHIrYq11G2BwQ==
+
 AllowedOrigins: http://localhost:3000
 
 # Logging
