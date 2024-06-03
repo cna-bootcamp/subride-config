@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: ${DB_USERNAME:root}
+    username: ${DB_USERNAME:root1}
     password: P@ssw0rd$
     #password: ${DB_PASSWORD:P@ssword$}
     #password: "{cipher}a68de9b0597cdb81a077bc626aa714f834e6798e9c0aa53c26d5cefb2c525d06"
