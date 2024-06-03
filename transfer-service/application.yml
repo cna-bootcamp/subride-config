@@ -1,0 +1,8 @@
+# Logging
+logging:
+  level:
+    org.springframework.security: DEBUG
+    com.subride.transfer: DEBUG
+feign:
+  mygroup:
+    url: ${MYGRP_URI}
