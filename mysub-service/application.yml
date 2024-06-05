@@ -6,8 +6,8 @@ spring:
     password: ${RABBITMQ_PASSWORD}
     permitted-list-patterns:    #수신된 Event의 역직렬화를 허용할 객체 지정
       - com.subride.common.event.*
-    deserialization:
-      trust-all: true
+#    deserialization:
+#      trust-all: true
 
 # Logging
 logging:
