@@ -4,5 +4,5 @@ jwt:
 # Logging
 logging:
   level:
-    com.subride.member.infra.in: DEBUG
-    com.subride.member.infra.out: DEBUG
+    com.subride.member.infra.in: INFO
+    com.subride.member.infra.out: INFO
