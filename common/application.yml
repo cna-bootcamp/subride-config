@@ -38,7 +38,8 @@ logging:
 # Eureka client 설정
 eureka:
   instance:
-    hostname: ${HOSTNAME}.${APPLICATION_NAME}-headless.${NAMESPACE}.svc.cluster.local
+    hostname: ${HOSTNAME}
+    instanceId: ${HOSTNAME}.${APPLICATION_NAME}-headless.${NAMESPACE}.svc.cluster.local
     preferIpAddress: true
     nonSecurePort: 80
     securePort: 443
