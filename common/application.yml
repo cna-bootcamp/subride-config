@@ -39,7 +39,7 @@ logging:
 eureka:
   instance:
     hostname: ${HOSTNAME}
-    instanceId: ${POD_IP}
+    instanceId: ${POD_IP}:${SERVER_PORT}
     preferIpAddress: true
     nonSecurePort: 80
     securePort: 443
