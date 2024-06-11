@@ -39,7 +39,7 @@ logging:
 eureka:
   instance:
     hostname: ${HOSTNAME}
-    instanceId: ${APPLICATION_NAME}-headless.${NAMESPACE}.svc.cluster.local
+    instanceId: ${POD_IP}
     preferIpAddress: true
     nonSecurePort: 80
     securePort: 443
