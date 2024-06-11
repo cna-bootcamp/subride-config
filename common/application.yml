@@ -34,7 +34,6 @@ AllowedOrigins: ${FRONT_HOST}
 logging:
   level:
     root: INFO
-    com.subride: DEBUG
 
 # Eureka client 설정
 eureka:
