@@ -49,4 +49,4 @@ eureka:
     serviceUrl:
       defaultZone: ${EUREKA_SERVERS}
 
-AllowedOrigins: http://subride-front.165.192.76.211.nip.io
+AllowedOrigins: ${ALLOWED_ORIGINS:http://subride-front.165.192.76.211.nip.io}
