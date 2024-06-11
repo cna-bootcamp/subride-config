@@ -35,11 +35,11 @@ logging:
   level:
     root: INFO
 
-# Eureka client 설정
+# Eureka client 설정: headless 서비스를 등록함
 eureka:
   instance:
     hostname: ${HOSTNAME}
-    instanceId: ${HOSTNAME}.${APPLICATION_NAME}-headless.${NAMESPACE}.svc.cluster.local
+    instanceId: ${APPLICATION_NAME}-headless.${NAMESPACE}.svc.cluster.local
     preferIpAddress: true
     nonSecurePort: 80
     securePort: 443
