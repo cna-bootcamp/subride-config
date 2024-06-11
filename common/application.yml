@@ -48,3 +48,5 @@ eureka:
   client:
     serviceUrl:
       defaultZone: ${EUREKA_SERVERS}
+
+allowedOrigins: http://subride-front.165.192.76.211.nip.io
