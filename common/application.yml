@@ -35,11 +35,12 @@ logging:
   level:
     root: INFO
 
-# Eureka client 설정: headless 서비스를 등록함
+# Eureka client 설정: instanceId가 Eureka에 등록되는 주소임. StatefulSet으로 배포할 때만 동작함
 eureka:
   instance:
     hostname: ${HOSTNAME}
     instanceId: ${POD_IP}:${SERVER_PORT}
+    #instanceId: ${HOSTNAME}.{APPLICATION_NAME}-headless.${NAMESPACE}.svc.cluster.local:${SERVER_PORT}
     preferIpAddress: true
     nonSecurePort: 80
     securePort: 443
