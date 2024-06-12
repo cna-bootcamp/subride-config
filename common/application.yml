@@ -51,3 +51,9 @@ eureka:
   client:
     serviceUrl:
       defaultZone: ${EUREKA_SERVERS}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, env, mappings, routes
