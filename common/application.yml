@@ -42,7 +42,7 @@ eureka:
     instanceId: ${POD_IP}:${SERVER_PORT}
     #instanceId: ${HOSTNAME}.{APPLICATION_NAME}-headless.${NAMESPACE}.svc.cluster.local:${SERVER_PORT}
     preferIpAddress: true
-    nonSecurePort: 80
+    nonSecurePort: ${SERVER_PORT}
     securePort: 443
     nonSecurePortEnabled: true
     securePortEnabled: false
