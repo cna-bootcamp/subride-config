@@ -35,7 +35,7 @@ logging:
   level:
     root: INFO
 
-# Eureka client 설정: instanceId가 Eureka에 등록되는 주소임. StatefulSet으로 배포할 때만 동작함
+# Eureka client 설정
 # hostname은 서버를 구별하는 유일한 값이면 됨. instanceId는 Eureka에 등록된느 ID임 (라우팅할 때 주소 아님)
 # 라우팅 주소는 아래와 같이 결정됨
 # - preferIpAddress: false -> http://hostname:nonSecurePort, https://hostname:securePort
@@ -45,9 +45,9 @@ logging:
 # 만료 간주 시간(Eureka서버가 몇 초 동안 생존 신고를 못 받으면 만료로 간주할 지 판단하는 시간. 기본 90초)을 적절히 정의
 eureka:
   instance:
-    hostname: ${HOSTNAME}
+    hostname: ${HOSTNAME}.${APPLICATION_NAME}-headless.${NAMESPACE}.svc.cluster.local
     instanceId: ${HOSTNAME}
-    preferIpAddress: true
+    preferIpAddress: false
     nonSecurePort: ${SERVER_PORT}
     securePort: 443
     nonSecurePortEnabled: true
