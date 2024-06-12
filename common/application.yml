@@ -43,11 +43,14 @@ logging:
 # 연결되는 주소는 https://{eureka ingress host}/eureka/apps/{service id}의 결과에서 homepageUrl값임
 # 생존신고를 하는 주기(lease-renewal-interval-in-seconds. 기본 30초)와
 # 만료 간주 시간(Eureka서버가 몇 초 동안 생존 신고를 못 받으면 만료로 간주할 지 판단하는 시간. 기본 90초)을 적절히 정의
+# preferIpAddress를 false로 하고 hostname에 k8s DNS주소를 설정하는 방식은 StatefulSet으로 배포하는 경우에만 동작함
+# (Deployment로 배포한 Pod는 고유 주소가 생기지 않기 때문임)
 eureka:
   instance:
-    hostname: ${HOSTNAME}.${APPLICATION_NAME}-headless.${NAMESPACE}.svc.cluster.local
+    #hostname: ${HOSTNAME}.${APPLICATION_NAME}-headless.${NAMESPACE}.svc.cluster.local
+    hostname: ${HOSTNAME}
     instanceId: ${HOSTNAME}
-    preferIpAddress: false
+    preferIpAddress: true
     nonSecurePort: ${SERVER_PORT}
     securePort: 443
     nonSecurePortEnabled: true
@@ -58,6 +61,8 @@ eureka:
     serviceUrl:
       defaultZone: ${EUREKA_SERVERS}
 
+# Actuator는 서버의 여러 정보를 제공해 주는 라이브러리
+# {ingress host}/actuator/health와 같이 결과값을 구할 수 있음
 management:
   endpoints:
     web:
