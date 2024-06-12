@@ -36,11 +36,13 @@ logging:
     root: INFO
 
 # Eureka client 설정: instanceId가 Eureka에 등록되는 주소임. StatefulSet으로 배포할 때만 동작함
+# hostname은 서버를 구별하는 유일한 값이면 됨. instanceId는 Eureka에 등록된느 ID임 (이 값이 라우팅할 때 주소가 되는 것은 아님)
+#
 eureka:
   instance:
     hostname: ${HOSTNAME}
     #instanceId: ${POD_IP}:${SERVER_PORT}
-    instanceId: ${HOSTNAME}:${SERVER_PORT}
+    instanceId: ${POD_IP}:${SERVER_PORT}
     preferIpAddress: false
     nonSecurePort: ${SERVER_PORT}
     securePort: 443
