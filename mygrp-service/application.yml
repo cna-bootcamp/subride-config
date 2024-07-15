@@ -20,3 +20,4 @@ feign:
     url: ${SUBRECOMMEND_URI}
   mysub:
     url: ${MYSUB_URI}
+
