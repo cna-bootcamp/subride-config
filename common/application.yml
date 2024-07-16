@@ -49,7 +49,7 @@ eureka:
   instance:
     #hostname: ${HOSTNAME}.${APPLICATION_NAME}-headless.${NAMESPACE}.svc.cluster.local
     hostname: ${HOSTNAME}
-    instanceId: ${HOSTNAME}
+    instanceId: ${HOSTNAME}:${SERVER_PORT}
     preferIpAddress: true
     nonSecurePort: ${SERVER_PORT}
     securePort: 443
